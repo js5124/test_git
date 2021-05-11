@@ -197,6 +197,7 @@ def my_logger(funcs):
     # logging.FileHandler(os.path.join(os.getcwd(),funcs.__name__+'.log'))
     # logging.basicConfig(filename =os.path.join(os.getcwd(),funcs.__name__+'.log'),level=logging.info)
     # @wraps(funcs)
+    #make changes
     def wrapper(*args,**kwargs):
         print ("getting into logger wrapper ")
         logger.info(f'{args[0]} log as attached: {funcs.__name__} func is used')  #logging.info != logging.INFO  # args[0]
